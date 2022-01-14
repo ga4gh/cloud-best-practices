@@ -9,7 +9,7 @@ Best practices (spec development, project/issue management, testing, CI, etc.) a
 
 ## Sections
 
-* [Contribution Guidelines](#) **(Coming Soon)** - How to create issues and pull requests for spec improvements using HubFlow branching conventions.
+* [Contribution Guidelines](./sections/contributing/CONTRIBUTING.md) **(Coming Soon)** - How to create issues and pull requests for spec improvements using HubFlow branching conventions.
 * [Issue and PR Templates](#) **(Coming Soon)** - Templates to fill out when creating a new issue or PR.
 * [Project, Issue, PR Management](#) **(Coming Soon)** - Tools to manage work items at various stages of development. How to use Github labels, milestones, and the project board for Cloud specifications.
 * [Continuous Integration (CI)](#) **(Coming Soon)** - How to set up CI on Github Actions.
