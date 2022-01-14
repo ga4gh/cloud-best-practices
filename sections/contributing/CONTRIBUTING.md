@@ -22,7 +22,7 @@ Contribution of spec changes is handled via Github pull requests. See "[Creating
 
 To ensure that your code contribution can be reviewed, please follow these rules pertaining to forking, branch creation, and pull request creation:
 * All contributors, including those with write access to the main repository, should first fork the repository, and then create a new working branch within their own fork. This prevents the `ga4gh` fork from accumulating too many extraneous branches.
-* We follow a GitFlow branch model. **Please read the GitFlow guide linked above, it will give you a great overview of how our branches work. Do not make pull requests to `main`!**
+* We follow a [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branch model. **Please read the GitFlow guide linked above, it will give you a great overview of how our branches work. Do not make pull requests to `main`!**
 
     * Always create branches from `ga4gh/develop`, and create pull requests that merge back into `ga4gh/develop`.
     * Never push or make pull requests to `main`. The spec maintainers will make pull requests to `main` when cutting a release.
@@ -33,7 +33,7 @@ To ensure that your code contribution can be reviewed, please follow these rules
             * `fix` - for fixing errors
             * `support` - for editorial changes and refactors (of the way the spec is written, not refactors of the API itself)
         * `number` is the issue number that the branch/pull request addresses
-        * `description` is a short description of the branch (using snake case)
+        * `description` is a short description of the branch (preferably using kebab case)
 
     * An example branch name could be `feature/issue-123-new-endpoint`
     * If the branch naming convention has been followed correctly, nice things will happen: Github Actions will build human-readable documentation with your proposed changes, and host it at a public URL via **Github Pages**.
@@ -48,3 +48,7 @@ Some additional notes about pull requests:
 ## Review Process
 
 Pull requests will be reviewed by one or more API leads, and potentially by driver project contributors with a high stake in the proposed changes. The pull request will also be discussed at the Cloud Work Stream call. Changes may be requested by anyone in the work stream. If the proposed changes raise technical disagreements between work stream members, the work stream leads will lead deliberation at the Cloud call to achieve consensus.
+
+Once there is work stream consensus that the PR is suitable to merge, the leads will start a 2-4 week "open for comment" period. If no final issues are raised within that period, the PR will be merged.
+
+**Note:** PRs that do not address reviewer feedback, or fail to align with the release roadmap of the API spec, will be discarded. As such, one should get confirmation from the work stream that the issue aligns with the roadmap before working on a PR. One should also regularly attend the Cloud WS meetings to socialize their issue/PR with the group and drive it forward.
